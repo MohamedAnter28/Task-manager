@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wdth,wght@50..200,200..900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --bg-main:rgb(255, 248, 238);
+  --main-color: #fff;
+  --secondary-color:#f6f4ee;
+  --third-color: #db2b00;
+  --font-family: "Inconsolata", monospace;
+}
+
+body{
+  font-family: var(--font-family);
+  background-color: var(--bg-main);
+  height: 100vh;
+}
+
+
+
+.login-card{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.login-card .container{
+  display: flex;
+  flex-direction: column;
+  padding: 35px;
+  width: 350px;
+  background-color: var(--main-color);
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  
+}
+
+
+.login-card .container .header{
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.login-card .container .header h1{
+  color: #000;
+  font-size: 35px;
+  margin-bottom: 4px;
+  font-weight: 700;
+}
+
+
+.login-card .container .header h1 img{
+  width: 25px;
+  margin-left: 5px;
+}
+
+.login-card .container .header p{
+  color: #343434;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.login-card .container .failds{
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin: 12px 0;
+  padding: 8px 20px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+
+
+.login-card .container .failds input{
+  width: 100%;
+  margin-left: 10px;
+  border: none;
+  outline: none;
+  color: #343434;
+  font-family: var(--font-family);
+  font-weight: 500;
+}
+
+
+.input-icon{
+  color: rgba(0,0,0,0.1);
+}
+
+
+
+.btn{
+  display: block;
+  padding: 6px 20px;
+  background-color: #000;
+  color: var(--secondary-color);
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 400;
+  outline: none;
+  border: none;
+  transition: all 0.5s ease;
+  font-family: var(--font-family);
+}
+
+.btn:hover{
+  color: #000;
+  background-color: var(--secondary-color);
+}
+
+
+.icon{
+  width: 30px;
+  position: absolute;
+  right: 0px;
+  top: 9px;
+}
+
+.icon-succes,
+.icon-fail{
+  display: none;
+}
+
+.icon-succes.active,
+.icon-fail.active{
+  display: block;
+}
+
+
+.succes{
+  color: green;
+}
+
+.fail{
+  color: rgb(197, 6, 6);
+}
+
+.warning{
+  display: none;
+  position: absolute;
+  left: 50%;
+  top: 40px;
+  transform: translateX(-50%);
+  background-color: #fff;
+  padding: 2rem;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 0 7px rgba(0,0,0,0.3);
+}
+
+.warning.active{
+  display: block;
+}
+
+
+.warning h1{
+  color: red;
+  margin-bottom: 10px;
+}
+
+.warning p{
+  color: #ccc;
+}
+
+
+.create-account{
+  margin: 8px auto;
+  color: #343434;
+  font-size: 12px;
+}
+
+.create-account a{
+  color: var(--third-color);
+}

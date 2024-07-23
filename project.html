@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task Manager</title>
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <div class="container">
+    <div class="input-field">
+      <input type="text" name="task" id="task">
+      <button id="add-task">Add Task</button>
+    </div>
+    <div class="tasks-container">
+      <div class="tasks not-completed" id="not-completed" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <div class="heading">
+          <span class="flag"></span>
+          <p>Not Completed</p>
+        </div>
+      </div>
+      <div class="tasks in-progress" id="in-progress" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <div class="heading">
+          <span class="flag"></span>
+          <p>In Progress</p>
+        </div>
+      </div>
+      <div class="tasks completed" id="completed" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <div class="heading">
+          <span class="flag"></span>
+          <p>Completed</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

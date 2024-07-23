@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page | Task Manager</title>
+  <!-- CSS File -->
+  <link rel="stylesheet" href="style.css">
+  <!--  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <div class="warning">
+    <h1>Warning!</h1>
+    <p class="warning-ms">Please Enter a Valid values</p>
+  </div>
+  <div class="login-card">
+    <form action="#" class="container login">
+      <div class="header">
+        <h1>Welcome Sir<img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="28"></h1>
+      <p>Log in to enjoy the productivity system</p>
+      </div>
+      <div class="email-input failds">
+        <i class="fa-regular fa-envelope input-icon"></i>
+        <input type="email" name="email" id="email" placeholder="ahlan@productivitysystem.com" autocomplete="off">
+        <div class="icon-succes icon"><i class="fa-solid fa-circle-check succes"></i></div>
+        <div class="icon-fail icon"><i class="fa-solid fa-circle-exclamation fail"></i></div>
+      </div>
+      <div class="password-input failds">
+        <i class="fa-solid fa-lock input-icon"></i>
+        <input type="password" name="password" id="password" placeholder="Moraadahmed123@" autocomplete="off">
+        <div class="icon-succes icon"><i class="fa-solid fa-circle-check succes"></i></div>
+        <div class="icon-fail icon"><i class="fa-solid fa-circle-exclamation fail"></i></div>
+      </div>
+      <button class="btn">Login</button>
+      <p class="create-account">You don't hava an account?<a href="./signup.html">Create an account</a></p>
+    </form>
+  </div>
+  <script src="login.js"></script>
+</body>
+</html>
